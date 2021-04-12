@@ -6,7 +6,7 @@
     top: 0;
     background-color: #0e4d92;
     font-size: 2rem;
-    border-right: 5px solid black;
+    border-right: 4px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
 }

@@ -18,3 +18,8 @@ code {
     src: local('ShareTech'),
         url(./fonts/ShareTech-Regular.ttf) format('truetype');
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(./fonts/Roboto-Regular.ttf) format('truetype');
+}

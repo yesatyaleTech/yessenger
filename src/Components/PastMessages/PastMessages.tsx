@@ -1,10 +1,19 @@
 import React from 'react';
 import classes from './PastMessages.module.css'
+import PastMessageBox from '../PastMessageBox/PastMessageBox'
 
 const PastMessages = () => {
     return (
         <div className={classes.PastMessages}>
-            Past Message Filler
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
+            <PastMessageBox />
         </div>
     )
 }
