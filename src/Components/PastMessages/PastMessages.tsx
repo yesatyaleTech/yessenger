@@ -3,15 +3,15 @@ import classes from './PastMessages.module.css'
 import PastMessageBox from '../PastMessageBox/PastMessageBox'
 import moment from 'moment'
 
-const DUMMY_MESSAGES = [{title: 'Party', time: moment("2021-04-12" + ' ' + '10:44').calendar()}, 
-                        {title: 'Yessenger Meeting', time: moment("2021-04-11" + ' ' + '13:00').calendar()}, 
-                        {title: 'Test Message', time: moment("2021-04-10" + ' ' + '13:00').calendar()},
-                        {title: 'Test Message2', time: moment("2021-04-09" + ' ' + '13:00').calendar()},
-                        {title: 'Test Message3', time: moment("2021-04-08" + ' ' + '13:00').calendar()},
-                        {title: 'Test Message4', time: moment("2021-04-07" + ' ' + '13:00').calendar()},
-                        {title: 'Test Message5', time: moment("2021-04-06" + ' ' + '13:00').calendar()},
-                        {title: 'Test Message6', time: moment("2021-04-05" + ' ' + '13:00').calendar()},
-                        {title: 'Test Message7', time: moment("2021-04-04" + ' ' + '13:00').calendar()}]
+const DUMMY_MESSAGES = [{title: 'Party', time: moment("2021-04-12 10:44").calendar()}, 
+                        {title: 'Yessenger Meeting', time: moment("2021-04-11 13:00").calendar()}, 
+                        {title: 'Test Message', time: moment("2021-04-10 13:00").calendar()},
+                        {title: 'Test Message2', time: moment("2021-04-09 13:00").calendar()},
+                        {title: 'Test Message3', time: moment("2021-04-08 13:00").calendar()},
+                        {title: 'Test Message4', time: moment("2021-04-07 13:00").calendar()},
+                        {title: 'Test Message5', time: moment("2021-04-06 13:00").calendar()},
+                        {title: 'Test Message6', time: moment("2021-04-05 13:00").calendar()},
+                        {title: 'Test Message7', time: moment("2021-04-04 13:00").calendar()}]
 
 interface MessagePropType {
     title: string,
