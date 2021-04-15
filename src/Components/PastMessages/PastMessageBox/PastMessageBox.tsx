@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './PastMessageBox.module.css'
+import moment from 'moment'
 
 interface PastMessageBoxProps {
     title: string,
@@ -14,7 +15,7 @@ const PastMessageBox = ({title, time}: PastMessageBoxProps)  => {
                 {title}
             </div>
             <div className={classes.time}>
-                {time}
+                {moment(time).calendar()}
             </div>
         </div>
     )
