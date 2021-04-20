@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ComposePage from './hoc/ComposePage/ComposePage';
+import ComposePage from './views/ComposePage/ComposePage';
 
 function App() {
   return (

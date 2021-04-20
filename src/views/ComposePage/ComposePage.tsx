@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import SideNav from '../../Components/SideNav/SideNav'
-import PastMessages from '../../Components/PastMessages/PastMessages'
-import Compose from '../../Components/Compose/Compose'
-import moment from 'moment'
+import SideNav from '../../components/SideNav/SideNav'
+import PastMessages from '../../components/PastMessages/PastMessages'
+import Compose from '../../components/Compose/Compose'
+import moment from 'moment';
 
 import classes from './ComposePage.module.css'
 
