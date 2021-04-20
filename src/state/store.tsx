@@ -1,9 +1,12 @@
-import {createStore} from 'redux'
-import reducer from './reducer'
+import {createStore} from 'redux';
+import APP_STATE from './state';
+import reducer from './reducer';
 
 // the initial state of the application
-const initState = {
-
+const initState:APP_STATE  = {
+    loggedIn: false,
+    userId: null,
+    messages: [],
 }
 
 // the central store of the application's state
