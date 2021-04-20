@@ -9,6 +9,7 @@
     border-right: 5px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
+    overflow: auto;
 }
 
 .composeButton {
@@ -22,6 +23,7 @@
     margin-top: 5vh;
     padding: 1vw;
     font-size: 2rem;
+    white-space: nowrap;
 }
 
 .options {

@@ -4,5 +4,5 @@
     height: 100vh;
     grid-column-start: 3;
     grid-column-end: 5;
-    overflow-y: auto;
+    overflow: auto;
 }

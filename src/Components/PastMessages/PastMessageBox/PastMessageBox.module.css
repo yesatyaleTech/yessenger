@@ -2,6 +2,8 @@
     height: 75px;
     font-family: Roboto, serif;
     border-bottom: 1px solid black;
+    overflow: hidden;
+    display: block;
 }
 
 .box:hover {
@@ -11,6 +13,9 @@
 .title {
     text-align: left;
     padding: 10px;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
 }
 
 .time {
@@ -18,4 +23,7 @@
     font-size: 0.7rem;
     padding: 10px;
     margin-top: 2px;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
 }
