@@ -3,6 +3,9 @@
     grid-row: 5 / 16;
     font-size: 1.3rem;
     font-family: Roboto, serif;
+    border: 5px solid #051b33;
+    padding: 10px;
+    overflow-y: auto;
 }
 
 label {
@@ -43,10 +46,12 @@ select:hover {
 .messageBox {
     border: 1px solid #c4c4c4;
     border-radius: 5px;
-    width: 100%;
-    min-height: 30vh;
+    height: 30vh;
     font-family: Roboto, serif;
     font-size: 1.1rem;
+    overflow-y: auto;
+    resize: none;
+    width: 99%;
 }
 
 .composeButton {
@@ -59,4 +64,13 @@ select:hover {
     float: right;
     height: 3rem;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.composeButton:focus {
+    outline: none;
+}
+
+.composeButton:hover {
+    background-color: #328ef6;
 }

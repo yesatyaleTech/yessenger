@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import classes from './PastMessageBox.module.css'
 import moment from 'moment'
+import PastMessageContext from '../../../context/past-message-context'
 
 interface PastMessageBoxProps {
     title: string,
     time: string,
     key: number
+    message: string,
+    group: string,
 }
 
-const PastMessageBox = ({title, time}: PastMessageBoxProps)  => {
+const PastMessageBox = ({title, time, group, message}: PastMessageBoxProps)  => {
+    const ctx = useContext(PastMessageContext)
     return (
-        <div className={classes.box}>
+        <div onClick={() => ctx.toggleMessage(title, time, group, message)} className={classes.box}>
             <div className={classes.title}>
                 {title}
             </div>

@@ -12,6 +12,18 @@
     overflow: auto;
 }
 
+.txtBox {
+    margin-top: 20px;
+}
+
+.txtBox:hover {
+    text-decoration: underline;
+}
+.txt {
+    color: white;
+    text-decoration: none;
+}
+
 .composeButton {
     font-family: ShareTech, serif;
     color: white;
@@ -24,10 +36,18 @@
     padding: 1vw;
     font-size: 2rem;
     white-space: nowrap;
+    outline: none;
+}
+
+.composeButton:focus {
+    outline: none;
+}
+
+.composeButton:hover {
+    background-color: #051b33;
 }
 
 .options {
-    margin-top: 5vh;
     text-align: left;
     margin-left: 3vh;
 }

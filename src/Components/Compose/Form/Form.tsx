@@ -37,7 +37,7 @@ const Form = ({onSaveMessageData}: FormProps) => {
             title: enteredTitle,
             contactGroup: selectedContact,
             message: enteredTitle,
-            time: moment().format("YYYY-MM-DD hh:mm:ss").toString()
+            time: moment(moment().format("YYYY-MM-DD hh:mm:ss").toString()).toString()
         }
         console.log(messageData.time)
 

@@ -1,23 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import classes from './SideNav.module.css'
+import PastMessageContext from '../../context/past-message-context'
 
 const SideNav = () => {
 
-    const title = "clicked";
+    const ctx = useContext(PastMessageContext);
 
-    const [t, setT] = useState(title);
-
-    const clickHandler = () => {
-        setT('Clicked!')
-        console.log(t)
-    }
     return (      
         <div className={classes.sideNav}>
-            <button onClick={clickHandler} className={classes.composeButton}>New Message</button>
+            <button onClick={() => ctx.toggleMessage('', '', '', '')} className={classes.composeButton}>New Message</button>
             <div className={classes.options}>
-                <p>Dashboard</p>
-                <p>Contacts</p>
-                <p>Billing</p>
+                <div className={classes.txtBox}>
+                    <a className={classes.txt} href="/">Dashboard</a>
+                </div>
+                <div className={classes.txtBox}>
+                    <a className={classes.txt} href="/">Contacts</a>
+                </div>
+                <div className={classes.txtBox}>
+                    <a className={classes.txt} href="/">Billing</a>
+                </div>
+                
+                
             </div>
         </div>
     )
