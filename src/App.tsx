@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import ComposePage from './views/ComposePage/ComposePage';
+import { LandingPage } from './pages/LandingPage.component';
 
 function App() {
   return (
-    <>
-        <ComposePage/>
-    </>
+    <div className="App">
+      <LandingPage/>
+        {/* <ComposePage/> */}
+    </div>
   );
 }
 
