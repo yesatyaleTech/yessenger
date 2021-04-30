@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import { LandingPage } from './pages/LandingPage.component';
+import { Route, Switch } from 'react-router';
+import { SignInPage } from './pages/SignInPage.component';
+import { SignUpPage } from './pages/SignUpPage.component';
 
 function App() {
+
   return (
+
     <div className="App">
-      <LandingPage/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+
+      <Switch>
+        <Route exact path={'/'} component={LandingPage}/>
+        <Route exact path={'/login'} component={SignInPage}/>
+        <Route exact path={'/signup'} component={SignUpPage}/>
+      </Switch>
+
     </div>
   );
 }
