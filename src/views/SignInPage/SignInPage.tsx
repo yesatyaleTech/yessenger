@@ -16,7 +16,7 @@ export const SignInPage = () => {
             <div className={styles.authContainer}>
             <h1>Login</h1>
             <input type="text" placeholder="Email"/>
-            <input type="text" placeholder="Password"/>
+            <input type="password" placeholder="Password"/>
             <section >
             <input type="checkbox" name="memory"/>
             <label htmlFor="memory">Remember Me</label>
@@ -32,7 +32,7 @@ export const SignInPage = () => {
             </div>
             <span className={styles.noAcc}>
                 No account?&nbsp;&nbsp;
-                <a href="/sign-up">
+                <a href="/signup">
                     Sign Up Now
                 </a>
             </span>

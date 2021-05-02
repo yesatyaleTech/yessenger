@@ -7,15 +7,6 @@
     color: white;
 }
 
-input[type=text] {
-    padding: 10px;
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: inherit;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .login-button {
     border: 3px solid #fff;
     color: #328EF6;
