@@ -1,5 +1,4 @@
 import { useHistory } from 'react-router';
-import './LandingPage.css'
 
 export const SignUpPage = () => {
 
@@ -15,7 +14,6 @@ export const SignUpPage = () => {
     }
 
     return (
-
         <div className="container">
             <h1>Register</h1>
             <input type="text" placeholder="Email"/>

@@ -1,9 +1,9 @@
 import './App.css';
 import ComposePage from './views/ComposePage/ComposePage';
-import { LandingPage } from './views/LandingPage/LandingPage.component';
+import { LandingPage } from './views/LandingPage/LandingPage';
 import { Route, Switch } from 'react-router';
-import { SignInPage } from './views/AuthPages/SignInPage.component';
-import { SignUpPage } from './views/AuthPages/SignUpPage.component';
+import { SignInPage } from './views/SignInPage/SignInPage';
+import { SignUpPage } from './views/SignUpPage/SignUpPage';
 
 function App() {
 

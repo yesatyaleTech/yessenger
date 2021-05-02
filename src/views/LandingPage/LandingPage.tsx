@@ -11,16 +11,12 @@ export const LandingPage = () => {
 
     return (
 
-        <div className="container">
-            
-            <p>YESSENGER</p>
-
-            <p>Access all your Yale Entrepreneurial Society communication needs here.</p>
+        <div className="container"> 
             <h1 style={{padding: '45px'}}>YESSENGER</h1>
 
             <h4 style={{padding: '45px'}}>Access all your Yale Entrepreneurial Society communication needs here.</h4>
 
-            <button className="button" onClick={handleClick}>
+            <button className="login-button" onClick={handleClick}>
                 Login
             </button>
 
