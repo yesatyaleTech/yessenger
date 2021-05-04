@@ -1,5 +1,4 @@
 import './App.css';
-import ComposePage from './views/ComposePage/ComposePage';
 import { LandingPage } from './views/LandingPage/LandingPage';
 import { Route, Switch } from 'react-router';
 import { SignInPage } from './views/SignInPage/SignInPage';
@@ -10,8 +9,6 @@ function App() {
   return (
 
     <div className="App">
-        {/* <ComposePage/> */}
-
       <Switch>
         <Route exact path={'/'} component={LandingPage}/>
         <Route exact path={'/login'} component={SignInPage}/>
