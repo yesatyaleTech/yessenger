@@ -19,6 +19,9 @@ const SideNav = () => {
                 <div className={classes.txtBox}>
                     <a className={classes.txt} href="/">Billing</a>
                 </div>
+                <div className={classes.txtBox}>
+                    <a className={classes.txt} href="/">Templates</a>
+                </div>
                 
                 
             </div>

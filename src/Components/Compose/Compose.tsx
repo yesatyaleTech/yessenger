@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import classes from './Compose.module.css'
-import Form from './Form/Form'
+import Form from './SendMessageForm/SendMessageForm'
 import PastMessage from './PastMessage/PastMessage'
 import PastMessageContext from '../../context/past-message-context'
 
@@ -28,6 +28,7 @@ const Compose = ({ onAddMessage }: ComposeProps) => {
             {ctx.message.time === '' ? 
                 (<Form onSaveMessageData={saveMessageDataHandler} />) : 
                 (<PastMessage title={ctx.message.title} time={ctx.message.time} group={ctx.message.contactGroup} message={ctx.message.message} />)}
+            
         </div>
     )
 }

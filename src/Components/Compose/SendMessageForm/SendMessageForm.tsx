@@ -2,7 +2,7 @@ import React, { useState, ChangeEvent, SyntheticEvent, BaseSyntheticEvent } from
 
 import moment from "moment"
 
-import classes from './Form.module.css'
+import classes from './SendMessageForm.module.css'
 
 const DUMMY_CONTACTS = [
     { label: "Group 1", value: "Group 1" },
@@ -13,7 +13,7 @@ interface FormProps {
     onSaveMessageData: (data: any) => void,
 };
 
-const Form = ({onSaveMessageData}: FormProps) => {
+const SendMessageForm = ({onSaveMessageData}: FormProps) => {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [selectedContact, setSelectedContact] = useState('')
     const [enteredMessage, setEnteredMessage] = useState('')
@@ -81,5 +81,5 @@ const Form = ({onSaveMessageData}: FormProps) => {
 }
     
 
-export default Form;
+export default SendMessageForm;
 

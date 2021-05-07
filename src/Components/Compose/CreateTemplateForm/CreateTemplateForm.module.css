@@ -1,0 +1,123 @@
+.start {
+    grid-column: 2 / 13;
+    grid-row: 5 / 16;
+    font-size: 1.3rem;
+    font-family: Roboto, serif;
+    border: 5px solid #051b33;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+select:active,
+select:hover {
+    outline-color: #0e4d92;
+}
+
+.titleBox {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 15rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+.variableInput {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 15rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    float: left;
+    margin-top: 2px;
+}
+
+.gap {
+    margin-top: 10px;
+}
+
+.selectBox {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 15rem;
+    height: 1.6rem;
+    font-size: 1.1rem;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.removeButton {
+    width: 50px;
+    height: 25px;
+    background-color: #328ef6;
+    text-align: center;
+    margin: auto;
+    float: right;
+    margin-top: 5px;
+    color: white;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.addButton {
+    width: 50px;
+    height: 25px;
+    background-color: #0e4d92;
+    float: right;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.removeButton:hover {
+    border: 1px inset white;
+}
+
+.addButton:hover {
+    border: 1px inset white;
+}
+
+.messageBox {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    height: 30vh;
+    font-family: Roboto, serif;
+    font-size: 1.1rem;
+    overflow-y: auto;
+    resize: none;
+    width: 99%;
+}
+
+.contact {
+    margin-bottom: -10px;
+}
+
+.composeButton {
+    font-family: ShareTech, serif;
+    color: white;
+    border-radius: 40px;
+    border: 0px solid;
+    background-color: #0e4d92;
+    font-size: 1.2rem;
+    float: right;
+    height: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.composeButton:focus {
+    outline: none;
+}
+
+.composeButton:hover {
+    background-color: #328ef6;
+}
