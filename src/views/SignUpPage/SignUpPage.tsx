@@ -1,6 +1,6 @@
 import { useHistory } from 'react-router';
 import styles from './SignUpPage.module.css';
-import {ActionButton, Colors} from '../../Components/ActionButton/ActionButton';
+import {ActionButton, Colors} from '../../components/ActionButton/ActionButton';
 
 export const SignUpPage = () => {
 
