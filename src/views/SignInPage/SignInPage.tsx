@@ -18,7 +18,7 @@ const SignInPage = () => {
             </section>
             <div className={styles.buttonContainer}>
             <ActionButton 
-                onClick={() => {dispatch(loginUser(":ayo", "asd"))}}
+                onClick={() => {dispatch(loginUser("name", "pswd"))}}
                 color={Colors.Medium}
             >
                 Login

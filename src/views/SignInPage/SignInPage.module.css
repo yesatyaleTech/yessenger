@@ -41,3 +41,19 @@
 .noAcc a {
     color: grey;
 }
+
+.memory {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}
+
+.memory input {
+    grid-row: 1;
+    align-self: center;
+}
+
+.memory label {
+    grid-row: 1;
+    align-self: center;
+}

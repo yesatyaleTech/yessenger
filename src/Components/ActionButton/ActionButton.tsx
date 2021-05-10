@@ -15,13 +15,13 @@ type ActionButtonProps = {
 }
 
 function mapColorToStyle(color: Colors){
-    if(color == Colors.White){
+    if(color === Colors.White){
         return styles.ActionButtonWhite;
-    } else if(color == Colors.Light){
+    } else if(color === Colors.Light){
         return styles.ActionButtonLight;
-    } else if (color == Colors.Medium){
+    } else if (color === Colors.Medium){
         return styles.ActionButtonMedium;
-    } else if (color == Colors.Dark){
+    } else if (color === Colors.Dark){
         return styles.ActionButtonDark;
     }
 }
