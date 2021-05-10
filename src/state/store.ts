@@ -9,6 +9,4 @@ import thunk from 'redux-thunk';
 // the central store of the application's state
 const store = createStore<AppState, action<any>, any, any>(reducer, initState, applyMiddleware(thunk));
 
-console.log(store.state);
-
 export default store

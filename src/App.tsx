@@ -6,6 +6,7 @@ import { LoginPage } from './views/SignInPage/SignInPage';
 import { SignUpPage } from './views/SignUpPage/SignUpPage';
 import { connect } from 'react-redux';
 import { AppState, initState } from './state/state';
+import { NotificationPane } from './components/NotificationPane/NotificationPane';
 
 type props = {
   user: AppState["user"]
@@ -13,10 +14,12 @@ type props = {
 
 function App(props: props) {
   if (props.user !== null && props.user !== undefined) {
-    console.log(props.user);
-    console.log(typeof(props.user))
     return (
       <div className="App">
+        <div className="notif-container">
+          <NotificationPane />
+        </div>
+        <div className="app-container">
         <Router>
           <Switch>
             <Route exact path={'/'} component={LandingPage} />
@@ -25,19 +28,24 @@ function App(props: props) {
             <Route exact path={'/app'} component={ComposePage} />
           </Switch>
         </Router>
+        </div>
       </div>
     );
   }
-
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path={'/'} component={LandingPage} />
-          <Route exact path={'/login'} component={LoginPage} />
-          <Route exact path={'/signup'} component={SignUpPage} />
-        </Switch>
-      </Router>
+      <div className="notif-container">
+        <NotificationPane />
+      </div>
+      <div className="app-container">
+        <Router>
+          <Switch>
+            <Route exact path={'/'} component={LandingPage} />
+            <Route exact path={'/login'} component={LoginPage} />
+            <Route exact path={'/signup'} component={SignUpPage} />
+          </Switch>
+        </Router>
+        </div>
     </div>
   );
 }

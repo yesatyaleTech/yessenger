@@ -1,12 +1,12 @@
 import Contact from "../models/Contacts";
 import Message from "../models/Message";
+import Notification from "../models/Notification";
 
 export interface AppState {
     user?: string | null,
     messages?: Array<Message>,
     contacts?: Array<Contact>,
-    notifications: Array<String>,
-    errorNotifications: Array<String>,
+    notifications: Array<Notification>,
 }
 
 // the initial state of the application
@@ -15,6 +15,5 @@ export const initState: AppState = {
     messages: [],
     contacts: [],
     notifications: [],
-    errorNotifications: [],
 }
 

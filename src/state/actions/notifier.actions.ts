@@ -1,21 +1,35 @@
-import { ActionCreator, Dispatch } from 'redux';
+
+import Notification from '../../models/Notification';
+import { ActionCreator } from 'redux';
 import { action } from '../action';
 
 export interface NotifierAction extends action<any> {
     type: action<any>["type"],
-    payload: string,
+    payload: Notification,
 }
 
 export const createErrorNotification: ActionCreator<NotifierAction> = (message: string) => {
     return {
         type: "ERROR_NOTIFICATION",
-        payload: message
+        payload: {
+            isError: true,
+            message
+        }
     }
 }
 
 export const createUserNotification: ActionCreator<NotifierAction> = (message: string) => {
     return {
         type: "USER_NOTIFICATION",
-        payload: message,
+        payload: {
+            isError: false,
+            message
+        },
+    }
+}
+
+export const clearNotifications: ActionCreator<action<any>> = () =>{
+    return {
+        type: "CLEAR_NOTIFICATIONS",
     }
 }

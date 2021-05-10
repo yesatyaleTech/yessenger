@@ -8,18 +8,12 @@ export const NotificationReducer: Reducer<AppState["notifications"]> = (state: A
         case ("USER_NOTIFICATION"): {
             return [...state, action.payload]
         }
-        default: {
-            return state;
-        }
-    }
-}
-
-export const ErrorNotificationReducer: Reducer<AppState["errorNotifications"]> = (state: AppState["errorNotifications"] = initState["errorNotifications"], action: action<any>) => {
-    console.log(state);
-    switch (action.type) {
         case ("ERROR_NOTIFICATION"): {
             return [...state, action.payload]
-
+        }
+        case("CLEAR_NOTIFICATIONS"): {
+            console.log("ere")
+            return [];
         }
         default: {
             return state;

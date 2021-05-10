@@ -1,0 +1,9 @@
+.container {
+    background-color: white;
+    opacity: .99;
+    border-radius: 12px;
+    height: 50vh;
+    width: 50vw;
+    display: grid;
+    justify-content: center;
+}
