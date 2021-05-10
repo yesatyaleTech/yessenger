@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ComposePage from './views/ComposePage/ComposePage';
+import { LandingPage } from './views/LandingPage/LandingPage';
+import { Route, Switch } from 'react-router';
+import { SignInPage } from './views/SignInPage/SignInPage';
+import { SignUpPage } from './views/SignUpPage/SignUpPage';
 
 function App() {
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <ComposePage/> */}
+
+      <Switch>
+        <Route exact path={'/'} component={LandingPage}/>
+        <Route exact path={'/login'} component={SignInPage}/>
+        <Route exact path={'/signup'} component={SignUpPage}/>
+      </Switch>
+
     </div>
   );
 }

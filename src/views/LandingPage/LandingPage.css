@@ -1,0 +1,34 @@
+.container {
+    background: repeating-linear-gradient( -45deg, #0E4D92, #0E4D92 40px, #328EF6 40px, #328EF6 80px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.login-button {
+    border: 3px solid #fff;
+    color: #328EF6;
+    background: white;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    appearance: auto;
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    border-radius: 12px;
+}
+
+.login-button:hover {
+    background: none;
+    color: white
+}

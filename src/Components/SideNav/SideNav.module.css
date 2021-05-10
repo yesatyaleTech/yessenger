@@ -1,0 +1,53 @@
+.sideNav {
+    font-family: ShareTech, serif;
+    color: white;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0e4d92;
+    font-size: 2rem;
+    border-right: 5px solid black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow: auto;
+}
+
+.txtBox {
+    margin-top: 20px;
+}
+
+.txtBox:hover {
+    text-decoration: underline;
+}
+.txt {
+    color: white;
+    text-decoration: none;
+}
+
+.composeButton {
+    font-family: ShareTech, serif;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: #328ef6;
+    margin-left: 3vh;
+    display: block;
+    margin-top: 5vh;
+    padding: 1vw;
+    font-size: 2rem;
+    white-space: nowrap;
+    outline: none;
+}
+
+.composeButton:focus {
+    outline: none;
+}
+
+.composeButton:hover {
+    background-color: #051b33;
+}
+
+.options {
+    text-align: left;
+    margin-left: 3vh;
+}

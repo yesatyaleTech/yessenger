@@ -1,0 +1,58 @@
+.ActionButtonWhite {
+    color: black;
+    background-color: white;
+    width: fit-content;
+    padding: .5rem;
+    margin: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.ActionButtonLight {
+    background-color: #0E4D92;
+    color: white;
+    width: fit-content;
+    padding: .5rem;
+    margin: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.ActionButtonMedium {
+    background-color: #0E4D92;
+    color: white;
+    width: fit-content;
+    padding: .5rem;
+    margin: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.ActionButtonDark {
+    background-color: #051B33;
+    color: white;
+    width: fit-content;
+    padding: .5rem;
+    margin: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.ActionButtonWhite:hover,
+.ActionButtonLight:hover,
+.ActionButtonMedium:hover,
+.ActionButtonDark:hover {
+    opacity: .8;
+}

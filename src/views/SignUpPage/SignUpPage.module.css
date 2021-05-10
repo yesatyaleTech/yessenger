@@ -1,0 +1,43 @@
+.authContainer {
+    background-color: white;
+    display: grid;
+    padding: 1rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 12px;
+    width: 350px;
+    text-align: start;
+}
+
+.authContainer input[type="text"],
+.authContainer input[type="password"] {
+    border: 2px solid black;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pageContainer {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient( -45deg, #0E4D92, #0E4D92 40px, #328EF6 40px, #328EF6 80px);
+    height: 100vh;
+}
+
+.buttonContainer {
+    display: grid;
+    justify-content: right;
+}
+
+.haveAcc {
+    text-align: center;
+}
+
+.haveAcc a {
+    color: grey;
+}

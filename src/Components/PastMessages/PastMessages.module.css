@@ -1,0 +1,8 @@
+.PastMessages {
+    text-align: center;
+    border-right: 5px solid black;
+    height: 100vh;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    overflow: auto;
+}
