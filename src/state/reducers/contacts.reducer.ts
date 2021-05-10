@@ -3,8 +3,6 @@ import {AppState, initState} from '../state';
 import {Reducer} from 'redux';
 
 
-export const ContactsReducer:Reducer<AppState> = (state: AppState = initState, action: action<any>) => {
-    return {
-        ...state
-    }
+export const ContactsReducer:Reducer<AppState["contacts"]> = (state: AppState["contacts"] = initState["contacts"], action: action<any>) => {
+    return state;
 }

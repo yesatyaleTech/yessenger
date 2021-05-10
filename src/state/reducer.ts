@@ -1,16 +1,20 @@
-import {combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import { AuthReducer } from './reducers/auth.reducer';
 import { ContactsReducer } from './reducers/contacts.reducer';
 import { MessageReducer } from './reducers/messages.reducer';
+import { ErrorNotificationReducer, NotificationReducer } from './reducers/notification.reducer';
+import { AppState } from './state';
 
 
 
-const rootReducer = combineReducers(
+const rootReducer = combineReducers<AppState>(
     {
         user: AuthReducer,
         contacts: ContactsReducer,
         messages: MessageReducer,
-    } as any
+        notifications: NotificationReducer,
+        errorNotifications: ErrorNotificationReducer,
+    } 
 )
 
 export default rootReducer;

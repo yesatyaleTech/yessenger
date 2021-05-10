@@ -4,8 +4,6 @@ import {AppState, initState} from '../state';
 import {Reducer} from 'redux';
 
 
-export const MessageReducer:Reducer<AppState> = (state: AppState = initState, action: action<any>) => {
-    return {
-        ...state
-    }
+export const MessageReducer:Reducer<AppState["messages"]> = (state: AppState["messages"] = initState["messages"], action: action<any>) => {
+    return state
 }

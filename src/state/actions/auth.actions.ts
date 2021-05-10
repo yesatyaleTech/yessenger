@@ -1,6 +1,8 @@
 import { ActionCreator, Dispatch } from 'redux';
-import {action} from '../action';
+import { action } from '../action';
 import { ThunkAction } from 'redux-thunk';
+import { createErrorNotification, NotifierAction } from './notifier.actions';
+import { AppState } from '../state';
 
 export interface LoginAction extends action<string | null> {
     type: string,
@@ -29,27 +31,35 @@ const SignUpURL = "https://www.google.com";
 
 const LoginURL = "https://www.google.com";
 
-export const signupUser: ActionCreator<ThunkAction<Promise<SignUpAction>, string | null, { email: string, password: string }, SignUpAction>> = (email: string, password: string) => {
-    return async (dispatch: Dispatch<SignUpAction>) => {
+export const signupUser: ActionCreator<ThunkAction<Promise<NotifierAction>, string, { email: string, password: string }, NotifierAction>> = (email: string, password: string) => {
+    return async (dispatch: Dispatch<NotifierAction>) => {
         //Could add a loading action here
-        let res = await fetch(SignUpURL);
-        if (res.status === 201) {
-            let authBody = await res.json();
-            const signupAction = createSignupAction(authBody);
-            return dispatch(signupAction);
-        } else {
-            let parsed = await res.json();
-            let authBody = await res.json();
-            let message = parsed.message;
-            //const errorAction = createErrorAction(message);
-            const signupAction = createSignupAction(authBody);
-            return dispatch(signupAction);
+        try {
+
+
+            let res = await fetch(SignUpURL);
+            if (res.status === 201) {
+                let authBody = await res.json();
+
+                let message = "Account successfully created";
+                return dispatch(createErrorNotification(message));
+            } else {
+                // let parsed = await res.json();
+                // let authBody = await res.json();
+                let message = "You already have an account";
+                return dispatch(createErrorNotification(message));
+                //const signupAction = createSignupAction(authBody);
+                //return dispatch(signupAction);
+            }
+        } catch (err) {
+            let message = "You already have an account";
+            return dispatch(createErrorNotification(message));
         }
 
     };
 }
 
-export const loginUser: ActionCreator<ThunkAction<Promise<LoginAction>, string | null, { email: string, password: string }, LoginAction>> = (email: string, password: string) => {
+export const loginUser: ActionCreator<ThunkAction<Promise<LoginAction>, AppState["user"], { email: string, password: string }, LoginAction>> = (email: string, password: string) => {
     return async (dispatch: Dispatch<action<any>>) => {
         //Could add a loading action here
         // let res = await fetch(LoginURL);

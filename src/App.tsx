@@ -5,7 +5,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { LoginPage } from './views/SignInPage/SignInPage';
 import { SignUpPage } from './views/SignUpPage/SignUpPage';
 import { connect } from 'react-redux';
-import { AppState } from './state/state';
+import { AppState, initState } from './state/state';
 
 type props = {
   user: AppState["user"]
@@ -14,6 +14,7 @@ type props = {
 function App(props: props) {
   if (props.user !== null && props.user !== undefined) {
     console.log(props.user);
+    console.log(typeof(props.user))
     return (
       <div className="App">
         <Router>
@@ -41,7 +42,8 @@ function App(props: props) {
   );
 }
 
-const mapStateToProps = (state: AppState) => {
+const mapStateToProps = (state: AppState = initState) => {
+  console.log(state);
   return { user: state.user }
 }
 
