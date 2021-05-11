@@ -4,6 +4,10 @@ import { connect, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { AppState, initState } from '../../state/state';
 import { clearNotifications } from '../../state/actions/notifier.actions';
+import errorimage from '../../images/error.svg';
+import information from '../../images/information.svg';
+import close from '../../images/close.svg';
+import arrow from '../../images/arrow.svg';
 type Props = {
     notifications: Array<Notification>
 }
@@ -14,25 +18,45 @@ const NotificationViewer = (props: Props) => {
     useEffect(() => {
         if (notification !== 0 && (notification < 0 || notification === props.notifications.length)) {
             dispatch(clearNotifications())
+            setstate(0);
         }
-    });
+    }, [notification, dispatch, props.notifications.length]);
     if (props.notifications.length === 0 || notification < 0 || notification === props.notifications.length) {
         return (
             <>
             </>
         )
     }
+    let displayimage;
+    if (props.notifications[notification].isError) {
+        displayimage = errorimage;
+    } else {
+        displayimage = information;
+    }
     return (
         <div className={styles.container}>
-
-            <img src="" />
+            <button className={styles.close} onClick={() => {
+                dispatch(clearNotifications());
+                setstate(0);
+            }}>
+                <img src={close} />
+            </button>
+            <img src={displayimage} className={styles.displayimage} />
             {props.notifications[notification].message}
-            <button onClick={() => setstate(notification - 1)}>
-                last
-            </button>
-            <button onClick={() => setstate(notification + 1)}>
-                next
-            </button>
+            <div className={styles.buttonContainer}>
+                <button
+                    className={styles.last}
+                    onClick={() => setstate(notification - 1)}
+                >
+                    <img src={arrow} />
+                </button>
+                <button
+                    className={styles.next}
+                    onClick={() => setstate(notification + 1)}
+                >
+                    <img src={arrow} />
+                </button>
+            </div>
         </div>
     );
 }
