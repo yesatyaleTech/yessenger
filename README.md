@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Yessenger
 
 A web platform for sending mass text messages.
