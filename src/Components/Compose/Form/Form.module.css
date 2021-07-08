@@ -1,11 +1,12 @@
 .start {
     grid-column: 2 / 13;
-    grid-row: 5 / 16;
+    grid-row: 2 / 14;
     font-size: 1.3rem;
     font-family: Roboto, serif;
     border: 5px solid #051b33;
     padding: 10px;
     overflow-y: auto;
+    border-radius: 25px;
 }
 
 label {
@@ -57,7 +58,7 @@ select:hover {
 .composeButton {
     font-family: ShareTech, serif;
     color: white;
-    border-radius: 40px;
+    border-radius: 12px;
     border: 0px solid;
     background-color: #0e4d92;
     font-size: 1.2rem;

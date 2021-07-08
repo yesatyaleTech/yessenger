@@ -1,0 +1,92 @@
+.topNav {
+    font-family: ShareTech, serif;
+    color: #0e4d92;
+    top: 0;
+    height: fit-content;
+    border-right: 2px solid black;
+    display: grid;
+    background-color: #051b33;
+}
+
+.navRight {
+    display: grid;
+    justify-content: right;
+    grid-row: 1;
+    margin: 1rem;
+}
+
+.navLeft {
+    display: grid;
+    justify-content: left;
+    grid-row: 1;
+}
+
+.navButton {
+    font-family: ShareTech, serif;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #328ef6;
+    padding: .5rem;
+    height: fit-content;
+    width: fit-content;
+    outline: none;
+    grid-row: 1;
+    justify-content: right;
+    justify-self: right;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    outline: none;
+}
+
+.navButton:hover {
+    background-color: transparent;
+    border: 2px solid #328ef6;
+    cursor: pointer;
+}
+
+.ddToggle {
+    display: grid;
+    align-items: center;
+    grid-row: 1;
+    border-radius: 8px;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    background-color: transparent;
+    padding: .5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.ddToggle:hover {
+    background-color: #328ef6;
+}
+
+.ddArrow {
+    height: 20px;
+    width: 20px;
+    grid-row: 1;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.ddToggle:hover .ddArrow {
+    transform: rotate(-180deg);
+    transition: 500ms;
+}
+
+.profileImg {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    grid-row: 1;
+    height: 32px;
+    width: 32px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

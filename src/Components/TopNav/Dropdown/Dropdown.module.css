@@ -1,0 +1,10 @@
+.Dropdown {
+    position: absolute;
+    top: 58px;
+    left: 100px;
+    width: 200px;
+    transform: translateX(-45%);
+    background-color: #051b33;
+    height: 300px;
+    border-radius: 0 0 25px 25px;
+}

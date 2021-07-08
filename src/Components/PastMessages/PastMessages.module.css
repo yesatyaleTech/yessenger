@@ -1,8 +1,8 @@
 .PastMessages {
     text-align: center;
     border-right: 5px solid black;
-    height: 100vh;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    overflow: auto;
+    flex: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: calc(100vh - 1rem - 40px);
 }

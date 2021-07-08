@@ -4,10 +4,15 @@
     border-bottom: 1px solid black;
     overflow: hidden;
     display: block;
+    margin: .5rem;
 }
 
 .box:hover {
-    box-shadow: 0 4px 10px 0px #328ef6;
+    background-color: #328ef6;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
 }
 
 .title {

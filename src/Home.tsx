@@ -1,5 +1,4 @@
-import './App.css';
-import ComposePage from './views/ComposePage/ComposePage';
+import './Home.css';
 import { LandingPage } from './views/LandingPage/LandingPage';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { LoginPage } from './views/SignInPage/SignInPage';
@@ -7,25 +6,26 @@ import { SignUpPage } from './views/SignUpPage/SignUpPage';
 import { connect } from 'react-redux';
 import { AppState, initState } from './state/state';
 import { NotificationPane } from './components/NotificationPane/NotificationPane';
+import { App } from './views/App/App';
 
 type props = {
   user: AppState["user"]
 }
 
-function App(props: props) {
+function Home(props: props) {
   if (props.user !== null && props.user !== undefined) {
     return (
-      <div className="App">
+      <div className="Home">
         <div className="notif-container">
           <NotificationPane />
         </div>
-        <div className="app-container">
+        <div className="home-container">
         <Router>
           <Switch>
             <Route exact path={'/'} component={LandingPage} />
             <Route exact path={'/login'} component={LoginPage} />
             <Route exact path={'/signup'} component={SignUpPage} />
-            <Route exact path={'/app'} component={ComposePage} />
+            <Route path={'/app'} component={App} />
           </Switch>
         </Router>
         </div>
@@ -33,11 +33,11 @@ function App(props: props) {
     );
   }
   return (
-    <div className="App">
+    <div className="Home">
       <div className="notif-container">
         <NotificationPane />
       </div>
-      <div className="app-container">
+      <div className="home-container">
         <Router>
           <Switch>
             <Route exact path={'/'} component={LandingPage} />
@@ -55,4 +55,4 @@ const mapStateToProps = (state: AppState = initState) => {
   return { user: state.user }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(Home);

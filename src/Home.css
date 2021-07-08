@@ -1,4 +1,4 @@
-.App {
+.Home {
     text-align: center;
 }
 
@@ -10,7 +10,7 @@
     transform: translate(-50%, -50%);
 }
 
-.app-container {
+.home-container {
     z-index: 1;
     position: relative;
 }

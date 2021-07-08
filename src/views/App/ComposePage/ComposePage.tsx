@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import SideNav from '../../components/SideNav/SideNav'
-import PastMessages from '../../components/PastMessages/PastMessages'
-import Compose from '../../components/Compose/Compose'
+import PastMessages from '../../../components/PastMessages/PastMessages'
+import Compose from '../../../components/Compose/Compose'
 import moment from 'moment';
-import PastMessageContext from '../../context/past-message-context'
+import PastMessageContext from '../../../context/past-message-context'
 
 import classes from './ComposePage.module.css'
 
@@ -51,7 +50,6 @@ const ComposePage = () => {
                 message,
                 toggleMessage: updateShownMessageHandler,
             }}>
-                <SideNav/>
                 <PastMessages messagesObject={messages}/>
                 <Compose onAddMessage={addMessageHandler} />
             </PastMessageContext.Provider>
