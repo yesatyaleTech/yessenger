@@ -1,10 +1,10 @@
-import styles from './Dropdown.module.css';
+import styles from './Menu.module.css';
 
 type DDprops = {
     isOpen: boolean
 }
 
-export const Dropdown = ({isOpen}: DDprops) => {
+export const Menu = ({isOpen}: DDprops) => {
     if(isOpen){
         return (
             <div className={styles.Dropdown}>

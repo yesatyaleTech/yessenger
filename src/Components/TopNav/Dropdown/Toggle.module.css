@@ -1,0 +1,52 @@
+.ddToggle {
+    display: grid;
+    align-items: center;
+    grid-row: 1;
+    border-radius: 8px;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    background-color: transparent;
+    padding: .5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.ddToggle:hover {
+    background-color: #328ef6;
+}
+
+.ddArrow {
+    height: 20px;
+    width: 20px;
+    grid-row: 1;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    transition: 500ms;
+    transform: rotate(360deg);
+}
+
+.rddArrow {
+    height: 20px;
+    width: 20px;
+    grid-row: 1;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    transition: 500ms;
+    transform: rotate(180deg);
+}
+
+.profileImg {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    grid-row: 1;
+    height: 32px;
+    width: 32px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
